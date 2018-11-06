@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void f(int *n); //ფუნქციის პარამეტრად გამოყენებულია მიმთითებელი
+void f(int *n); //ფუნქციის პარამეტრად გამოყენებულია მიმთითებელი(pointer)
 
 int main()
 	{
