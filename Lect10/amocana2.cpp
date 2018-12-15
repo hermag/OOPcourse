@@ -63,41 +63,53 @@ class calculator
       }
   };
 
+int operaciebi(char operatori, calculator calc)
+  {
+    int result;
+    switch(operatori){
+            case '+':
+              result=calc.plus();
+              break;
+            case '-':
+              result=calc.minus();
+              break;
+            case '*':
+              result=calc.gamravleba();
+              break;
+            case '/':
+              result=calc.gayofa();
+              break;
+            default:
+              cout<<"operacia ar moiZebna"<<endl;
+              break;
+          }
+    return result;
+  }
+
 int main()
 {
-  int x,y,z;
-  char operatori;
-  cout<<"Shemoitanet x cvladis mnishvneloba"<<endl;
-  cin>>x;
-  cout<<"Shemoitanet y cvladis mnishvneloba"<<endl;
-  cin>>y;
-  cout<<"Shemoitanet z cvladis mnishvneloba"<<endl;
-  cin>>z;
-  //calculator kalk(x,y);
-  calculator kalk(x, y, z);
-  while(operatori!='.') {
-      cout<<"Shemoitanet cvladebs shoris operatori"<<endl;
-      cout<<"Dasashvebi operatorebis sia: + - * / %"<<endl;
-      cin>>operatori;
-      cout<<"kalkulatori angarishobs shemdegi operaciis shedegs "<<endl<<"x "<<operatori<<" y = ";
-      switch(operatori){
-              case '+':
-                z=kalk.plus();
-                break;
-              case '-':
-                z=kalk.minus();
-                break;
-              case '*':
-                z=kalk.gamravleba();
-                break;
-              case '/':
-                z=kalk.gayofa();
-                break;
-              default:
-                cout<<"operacia ar moiZebna"<<endl;
-                break;
-            }
-        cout<<z<<endl;
+  int x,y,z,k,res;
+  char operatori="+";
+   while(operatori!='.') {
+    cout<<"Shemoitanet x cvladis mnishvneloba"<<endl;
+    cin>>x;
+    cout<<"Shemoitanet y cvladis mnishvneloba"<<endl;
+    cin>>y;
+    cout<<"Shemoitanet z cvladis mnishvneloba"<<endl;
+    cin>>z;
+    cout<<"Shemoitanet k cvladis mnishvneloba"<<endl;
+    cin>>k;
+    cout<<"Shemoitanet operatori"<<endl;
+    cin>>operatori;
+    calculator kalk1(x, y);
+    res = operaciebi(operatori, kalk1);
+    cout<<res<<endl;
+    calculator kalk2(x, y, z);
+    res = operaciebi(operatori, kalk2);
+    cout<<res<<endl;
+    calculator kalk3(x, y, z, k);
+    res = operaciebi(operatori, kalk3);
+    cout<<res<<endl;
     };
   return 0;
 }

@@ -24,4 +24,13 @@ int main()
         else
           cout<<"ar aris martivi"<<endl;
       } while(a!=-1);
+
+      while(a!=-1)
+        {
+          cin>>a;
+          if(martivoba(a))
+            cout<<"martivia"<<endl;
+          else
+            cout<<"ar aris martivi"<<endl;
+        }
 }
