@@ -7,10 +7,10 @@ class samp
     private:
       int a;
     public:
-      samp (int n)
-        {
-          a=n;
-        }
+      //samp (int n)
+      //  {
+      //    a=n;
+      //  }
       void set(int n)
         {
           a = n;
@@ -24,7 +24,17 @@ class samp
 int main()
   {
     int N=3, M=3, i, i1, j, j1, tmp;
-    samp twodarray[3][3] = {-3,-10,3,4,45,-6,5,0,0};
+    //samp twodarray[3][3] = {-3,-10,3,4,45,-6,5,0,0};
+    samp twodarray[3][3];
+    //შეტანა
+    for(i = 0; i < N; ++i)
+    {
+      for(j = 0; j < M; ++j)
+      {
+        cin >> tmp;
+        twodarray[i][j].set(tmp);
+      }
+    }    
     //ბეჭდვა
     for(i = 0; i < N; ++i)
     {
