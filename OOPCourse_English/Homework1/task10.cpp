@@ -80,8 +80,8 @@ void get_number_of_people(zodiac signes[20], int month)
 
 int main()
 {
-	int i=0, month, people=5;
-	zodiac signes[5];
+	int i=0, month, people=20;
+	zodiac signes[20];
 	while (i < people)
 		{
 			cout << "Enter name "<<endl;
