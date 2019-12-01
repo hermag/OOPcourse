@@ -1,6 +1,14 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int x, y, z;
+    cout<<"შემოიტანეთ x-ის და y-ის მნიშვნელობები"<<endl;
+    cin>>x>>y;
+    cout<<"x="<<x<<" y="<<y<<endl;
+    z=x;
+    x=y;
+    y=z;
+    cout<<"x="<<x<<" y="<<y<<endl;
     return 0;
 }
