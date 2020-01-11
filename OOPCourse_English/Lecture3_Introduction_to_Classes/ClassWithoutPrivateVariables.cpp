@@ -3,13 +3,13 @@ using namespace std;
 
 class testclass
   {
-  public:
-    int a;
-    float f;
-    void test(int x)
-      {
-        cout<<"We are inside of public method test, and got the parameter x="<<x<<endl;
-      }
+    public:
+      int a;
+      float f;
+      void test(int x)
+        {
+          cout<<"ჩვენ ვართ ღია ტიპის კლასის მეთოდის ტანში x="<<x<<endl;
+        }
   };
 
   int main()
