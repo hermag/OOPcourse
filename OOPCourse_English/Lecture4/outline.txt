@@ -1,0 +1,4 @@
+Outline
+1. Assignment of objects
+2. Passing objects to functions
+3. Friend functions
