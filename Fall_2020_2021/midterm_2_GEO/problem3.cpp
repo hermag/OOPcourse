@@ -28,7 +28,7 @@ void the_function()
 
 void the_function(const string& arg1)
 {
-	if (arg1.length()/2==0)
+	if (arg1.length()%2==0)
 		{
 			v.push_back(arg1);
 		}
