@@ -28,7 +28,7 @@ void the_function()
 
 void the_function(const string& arg1)
 {
-	if (arg1.length()/2==0)
+	if (arg1.length()%2==0)
 		{
 			v.push_back(arg1);
 		}
@@ -42,7 +42,7 @@ void the_function(const string& arg1, const string& arg2)
 {
 	string the_string;
 	the_string = arg1 + arg2;
-	if (the_string.length()/2==0)
+	if (the_string.length()%2==0)
 		{
 			cout<<"გადაცემული სტრიქონული ტიპის ცვლადებში, სიმბოლოების ჯამური რაოდენობა ლუწია"<<endl;
 		}
