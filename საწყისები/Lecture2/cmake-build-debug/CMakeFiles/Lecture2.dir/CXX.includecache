@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ereklemagradze/CodeArea/OOPcourse/საწყისები/Lecture2/main.cpp
+iostream
+-
+string
+-
+vector
+-
+cmath
+-
+
