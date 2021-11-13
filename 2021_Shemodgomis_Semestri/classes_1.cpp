@@ -8,13 +8,6 @@ int CalculateDistance(const string& FromCity, const string& ToCity)
     return (FromCity.size() + ToCity.size())*20;
 }
 
-void PrintVector(const vector<Travel>& v){
-    for (auto e : v)
-    {
-        cout<<"მანძილი:"<<e.get_distance()<<endl;
-    }
-}
-
 class Travel {
     private:
         string from_city;
@@ -36,6 +29,13 @@ class Travel {
             return distance;
         }
 };
+
+void PrintVector(const vector<Travel>& v){
+    for (auto e : v)
+    {
+        cout<<"მანძილი:"<<e.get_distance()<<endl;
+    }
+}
 
 int main()
 {
