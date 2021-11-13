@@ -24,6 +24,14 @@ class Travel {
             to_city = t_city;
             distance = CalculateDistance(from_city, to_city);
         }
+        string get_from_city()
+        {
+            return from_city;
+        }
+        string get_to_city()
+        {
+            return to_city;
+        }
         int get_distance()
         {
             return distance;
@@ -33,7 +41,8 @@ class Travel {
 void PrintVector(const vector<Travel>& v){
     for (auto e : v)
     {
-        cout<<"მანძილი:"<<e.get_distance()<<endl;
+        cout<<"გასამგზავრებელი ქალაქია "<<e.get_from_city()<<" დანიშნულების ქალაქი "<<e.get_to_city();
+        cout<<" მათ შორის მანძილია:"<<e.get_distance()<<endl;
     }
 }
 
